@@ -1,7 +1,7 @@
 {
   "name": "@rmw/nt2json5",
   "repository": "git@github.com:rmw-lib/nt2json5.git",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "exports": {
     ".": {
       "require": "./lib/index.cjs",
