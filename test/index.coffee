@@ -1,7 +1,5 @@
 #!/usr/bin/env coffee
 
-import "@rmw/console/global"
-import coffee_template from '@rmw/coffee_template'
+import nt2json5 from '@rmw/nt2json5'
 
-console.log await coffee_template()
-
+console.log nt2json5("1: 2")

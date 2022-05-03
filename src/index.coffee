@@ -1,7 +1,17 @@
 #!/usr/bin/env coffee
 
-export default main = =>
+import {
+  createRequire
+} from 'module'
 
-if process.argv[1] == decodeURI (new URL(import.meta.url)).pathname
-  console.log await main()
-  process.exit()
+require = createRequire(import.meta.url)
+
+{
+  nt2json
+} = require('./lib.node')
+
+export default (txt)=>
+  try
+    return nt2json(txt)
+  catch err
+    return txt
