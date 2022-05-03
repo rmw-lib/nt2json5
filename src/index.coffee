@@ -15,5 +15,5 @@ export default (txt)=>
   try
     o = JSON.parse nt2json(txt)
   catch err
-    return txt
+    o = txt
   json5.stringify(o)
