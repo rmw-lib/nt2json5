@@ -15,7 +15,7 @@ zig build-lib \
 --strip \
 -dynamic \
 -OReleaseSafe \
--femit-bin=lib.node \
+-femit-bin=src/lib.node \
 -fallow-shlib-undefined \
 -isystem $NODE \
 ./zig/main.zig $@
