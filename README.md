@@ -15,7 +15,7 @@
 
 import nt2json5 from '@rmw/nt2json5'
 
-console.log nt2json5("1: 2")
+console.log nt2json5("a: 2")
 ```
 
 ## 中文说明
@@ -31,7 +31,7 @@ console.log nt2json5("1: 2")
 
 import nt2json5 from '@rmw/nt2json5'
 
-console.log nt2json5("1: 2")
+console.log nt2json5("a: 2")
 ```
 
 ### 关于

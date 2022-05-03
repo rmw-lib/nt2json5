@@ -3,6 +3,7 @@
 import {
   createRequire
 } from 'module'
+import json5 from 'json5'
 
 require = createRequire(import.meta.url)
 
@@ -12,6 +13,7 @@ require = createRequire(import.meta.url)
 
 export default (txt)=>
   try
-    return nt2json(txt)
+    o = JSON.parse nt2json(txt)
   catch err
     return txt
+  json5.stringify(o)
