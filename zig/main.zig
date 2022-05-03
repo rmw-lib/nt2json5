@@ -21,7 +21,7 @@ fn nt2json(env: napi.env, input: napi.string) !napi.string {
     var json_tree = try tree.root.?.toJson(allocator);
     defer json_tree.deinit();
     var buffer = std.ArrayList(u8).init(allocator);
-    errdefer buffer.deinit();
+    defer buffer.deinit();
     try json_tree.root.jsonStringify(.{}, buffer.writer());
     return napi.string.new(env, .utf8, buffer.items);
 }
